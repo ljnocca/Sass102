@@ -10,4 +10,13 @@
     	}
   	}
   	```
-  	
+
+* mixins
+	* make groups of CSS declarations that you want to reuse throughout your site:
+		* declare the following at the top of the SCSS file:
+		```
+		@mixin backface-visibility {
+  			backface-visibility: hidden;
+  		}
+
+  		* use `@include backface_visibility;` wherever you want to include that mixin
